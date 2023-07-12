@@ -1,0 +1,44 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper build-item-page">
+    <div class="build-item">
+       <div class="outset-neomo build-info">
+            <svg width="1000" height="500" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image href="assets/img/2.jpg"></image>
+
+                <path id="stage-1" class="stage" data-floors-number="1" data-all-flats-number="5" data-free-flats-number="2" data-boocking-flats-number="2" data-action-flats-number="0" data-sold-flats-number="4" d="M504 457.5H322.5V438.5H504V457.5Z" stroke="black" stroke-width="2" />
+                <path id="stage-2" class="stage" data-floors-number="2" data-all-flats-number="7" data-free-flats-number="1" data-boocking-flats-number="3" data-action-flats-number="1" data-sold-flats-number="1" d="M503.5 437H322.5V418H503.5V437Z" stroke="black" />
+                <path id="stage-3" class="stage" data-floors-number="3" data-all-flats-number="4" data-free-flats-number="2" data-boocking-flats-number="1" data-action-flats-number="2" data-sold-flats-number="3" d="M503.5 416.5H322.5V400.5H503.5V416.5Z" stroke="black" />
+                <path id="stage-4" class="stage" data-floors-number="4" data-all-flats-number="5" data-free-flats-number="3" data-boocking-flats-number="1" data-action-flats-number="2" data-sold-flats-number="2" d="M503.5 399.5H322.5V379.5H503.5V399.5Z" stroke="black" />
+                <path id="stage-5" class="stage" data-floors-number="5" data-all-flats-number="7" data-free-flats-number="1" data-boocking-flats-number="2" data-action-flats-number="2" data-sold-flats-number="4" d="M503.5 378.5H322.5V360.5H503.5V378.5Z" stroke="black" />
+                <path id="stage-6" class="stage" data-floors-number="6" data-all-flats-number="4" data-free-flats-number="2" data-boocking-flats-number="2" data-action-flats-number="0" data-sold-flats-number="2" d="M503.5 359.5H322.5V342.5H503.5V359.5Z" stroke="black" />
+                <path id="stage-7" class="stage" data-floors-number="7" data-all-flats-number="5" data-free-flats-number="2" data-boocking-flats-number="1" data-action-flats-number="0" data-sold-flats-number="3" d="M503.5 341.5H322.5V324H503.5V341.5Z" stroke="black" />
+                <path id="stage-8" class="stage" data-floors-number="8" data-all-flats-number="7" data-free-flats-number="3" data-boocking-flats-number="4" data-action-flats-number="0" data-sold-flats-number="3" d="M503.5 323H322.5V305.5H503.5V323Z" stroke="black" />
+                <path id="stage-9" class="stage" data-floors-number="9" data-all-flats-number="4" data-free-flats-number="1" data-boocking-flats-number="1" data-action-flats-number="2" data-sold-flats-number="2" d="M503.5 304.5H322.5V288H503.5V304.5Z" stroke="black" />
+                <path id="stage-10" class="stage" data-floors-number="10" data-all-flats-number="5" data-free-flats-number="2" data-boocking-flats-number="1" data-action-flats-number="2" data-sold-flats-number="3" d="M503.5 287.5H322.5V269H503.5V287.5Z" stroke="black" />
+                <path id="stage-11" class="stage" data-floors-number="11" data-all-flats-number="7" data-free-flats-number="3" data-boocking-flats-number="2" data-action-flats-number="1" data-sold-flats-number="3" d="M503.5 268H322.5V249.5L503.5 250.5V268Z" stroke="black" />
+                <path id="stage-12" class="stage" data-floors-number="12" data-all-flats-number="4" data-free-flats-number="1" data-boocking-flats-number="3" data-action-flats-number="1" data-sold-flats-number="1" d="M503.5 249.5L322.5 248.5V232.5L503.5 233V249.5Z" stroke="black" />
+                <path id="stage-13" class="stage" data-floors-number="13" data-all-flats-number="5" data-free-flats-number="2" data-boocking-flats-number="2" data-action-flats-number="2" data-sold-flats-number="3" d="M503.5 231.5H322.5V214.5H503.5V231.5Z" stroke="black" />
+                <path id="stage-14" class="stage" data-floors-number="14" data-all-flats-number="7" data-free-flats-number="2" data-boocking-flats-number="1" data-action-flats-number="2" data-sold-flats-number="0" d="M503 213H322V196H503V213Z" stroke="black" />
+                <path id="stage-15" class="stage" data-floors-number="15" data-all-flats-number="4" data-free-flats-number="3" data-boocking-flats-number="3" data-action-flats-number="2" data-sold-flats-number="0" d="M503 195H322V171H331L335 168L501 169V175.5H504V195H503Z" stroke="black" />
+            </svg>
+          </div>
+            <div class="outset-neomo build-info">
+                <h2 class="build-info__title">Информация о доме</h2>
+                <h4>Адрес<span> вул. Незалежності 7</span></h4>
+                <div class="flats-info">
+                    <h3>Информация про <span id="floors-value"></span> этаж:</h3>
+                <div class="flats-info__item">Всего квартир<div id="all-value">50</div></div>
+                <div class="flats-info__item">Cвободных квартир  <div id="free-value">12</div></div>
+                <div class="flats-info__item">Забронированых  <div id="booking-value">14</div></div>
+                <div class="flats-info__item">Акционных <div id="action-value">3</div></div>
+                <div class="flats-info__item">Проданных <div id="sold-value">20</div></div>
+                </div>
+
+                <div class="build-info__descriptions inset-neomo">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae, fugiat necessitatibus suscipit a, facere ad animi quae, obcaecati cumque consectetur mollitia natus sunt? Et enim libero praesentium, cupiditate, commodi impedit, quae adipisci distinctio animi fugit suscipit molestias. Quisquam, dolores eum provident itaque maxime voluptas sapiente qui magnam ullam in voluptatum officiis aliquam odit a tempora tenetur beatae delectus aspernatur. Nemo debitis molestias nisi explicabo veniam et odit dolor aperiam. Laudantium aliquam quibusdam culpa quisquam velit, sint labore alias accusantium soluta facere modi dolorum pariatur fugit voluptate, dolore sunt libero ducimus harum incidunt exercitationem architecto reprehenderit ratione omnis. Deleniti, vero.
+                </div>
+            </div>
+        </div>
+</main>
+@@include('templates/footer.html')

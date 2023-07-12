@@ -1,10 +1,16 @@
 .genplan {
     display: flex;
+    justify-content: center;
     min-height: calc(100vh - 200px);
-}
 
-.build-info {
-    margin: 60px 0 60px 30px;
+    &-info {
+        @extend .build-info;
+
+    }
+
+    .genplan-info {
+        width: 100%;
+    }
 }
 
 .build {
@@ -21,25 +27,74 @@
         stroke-opacity: 0.8;
     }
     
+    &.active {
+        fill: #13cde5;
+    }
     
 }
 
-#build-1 {
+.build-1 {
+    fill: #c40606;
+    stroke: #c20303;
+}
+
+.build-2 {
     fill: #5E00F7;
     stroke: #5404FD;
 }
 
-#build-2 {
-    fill: #F11E1E;
-    stroke: #EE0707;
-}
-
-#build-3 {
+.build-3 {
     fill: #006A0B;
     stroke: #156F06;
 }
 
-#build-4 {
+.build-4 {
     fill: #E9ED0B;
     stroke: #E9ED0B;
 }
+
+.build-info {
+    width: 650px;
+    margin: 60px 70px 60px 60px;
+    padding: 60px;
+    border-radius: 25px;
+
+
+    &__title {
+        margin-bottom: 24px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    h4 {
+        display: flex;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        padding: 18px 12px;
+
+        span {
+            display: inline-block;
+            margin-left: 18px;
+            font-weight: 900;
+            color: #3bd242;
+        }
+    }
+
+    &__descriptions {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        padding: 18px 12px;
+        min-height:  150px;
+    }
+}
+
+.sold {
+    &:hover {
+        path {
+            cursor: not-allowed;
+        }
+    }
+}
+
+
